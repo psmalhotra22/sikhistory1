@@ -218,7 +218,7 @@ const menuItems = [
     icon: ScrollText,
     children: [
       { to: "/nitnem", label: "Nitnem", icon: ScrollText },
-      { to: "/nitnem/songs", label: "Songs", icon: Music },
+      { to: "/nitnem/SpiritualSongs", label: "Spiritual Songs", icon: Music },
     ],
   },
   { to: "/purpose", label: "Purpose", icon: Sparkles },
