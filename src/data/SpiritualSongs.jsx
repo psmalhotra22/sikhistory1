@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { Music, PlayCircle } from "lucide-react";
 
 // Later you can move this to /data/songs.js
-const songs = [
+const SpiritualSongsData = [
   {
     id: "hind-ki-chadar",
     title: "Hind Ki Chadar",
@@ -129,7 +129,7 @@ const songs = [
 ];
 
 
-export default function Songs() {
+export default function SpiritualSongs() {
   return (
     <div className="pt-24 pb-16 min-h-screen bg-gradient-to-b from-navy via-navy/95 to-black text-white">
       {/* HEADER */}
@@ -150,7 +150,7 @@ export default function Songs() {
 
       {/* SONGS GRID */}
       <section className="max-w-7xl mx-auto px-4">
-        {songs.length === 0 ? (
+        {SpiritualSongsData.length === 0 ? (
           <div className="flex flex-col items-center justify-center py-24 text-center">
             <Music className="w-16 h-16 text-saffron mb-4 opacity-80" />
             <h2 className="text-2xl font-semibold mb-2">
@@ -164,7 +164,7 @@ export default function Songs() {
           </div>
         ) : (
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
-            {songs.map((song, i) => (
+            {SpiritualSongsData.map((song, i) => (
               <motion.div
                 key={song.id}
                 initial={{ opacity: 0, y: 30 }}

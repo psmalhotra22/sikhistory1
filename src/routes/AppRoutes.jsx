@@ -8,9 +8,9 @@ import Nitnem from "../pages/Nitnem";
 import Shaheeds from "../pages/Shaheeds";
 import SikhGallery from "../pages/SikhGallery";
 import GurudwaraGallery from "../pages/GurudwaraGallery";
-import Songs from "../data/songs";
 import Sakhiyan from "../pages/Sakhiyan";
 import Purpose from "../pages/purpose";
+import SpiritualSongs from "../data/SpiritualSongs";
 
 export default function AppRoutes({ refreshKey }) {
   const location = useLocation();
@@ -27,7 +27,7 @@ export default function AppRoutes({ refreshKey }) {
       <Route path="/nitnem" element={<Nitnem />} />
       <Route path="/gallery" element={<SikhGallery />} />
       <Route path="/shaheeds" element={<Shaheeds />} />
-      <Route path="/nitnem/songs" element={<Songs />} />
+      <Route path="/nitnem/SpiritualSongs" element={<SpiritualSongs />} />
       <Route path="/purpose" element={<Purpose />} />
     </Routes>
   );
