@@ -159,7 +159,9 @@ export default function Home() {
               </>
             )}
           </div>
-          <InstallButton/>
+          <div className="flex justify-center my-10">
+  <InstallButton />
+</div>
 
           {/* ---------- DAILY THOUGHT CARD ---------- */}
           <motion.div
