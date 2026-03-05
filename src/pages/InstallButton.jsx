@@ -1,11 +1,11 @@
 import { useEffect, useState } from "react";
 
 const InstallButton = () => {
-  const [prompt, setPrompt] = useState<any>(null);
+  const [prompt, setPrompt] = useState(null);
   const [visible, setVisible] = useState(false);
 
   useEffect(() => {
-    const handler = (e: any) => {
+    const handler = (e) => {
       e.preventDefault();
       setPrompt(e);
       setVisible(true);
