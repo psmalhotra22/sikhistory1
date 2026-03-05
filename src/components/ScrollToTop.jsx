@@ -25,7 +25,7 @@ export default function ScrollToTop() {
           whileHover={{ scale: 1.15 }}
           whileTap={{ scale: 0.95 }}
           transition={{ duration: 0.3 }}
-          className="fixed bottom-12 right-8 z-50 bg-transparent"
+          className="fixed bottom-12 right-8  bg-transparent"
           aria-label="Scroll to top"
         >
           {/* Top HUD line (LONGER) */}

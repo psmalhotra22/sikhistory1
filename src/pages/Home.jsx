@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
+import InstallButton from "./InstallButton";
 
 /* ---------------- ANIMATIONS ---------------- */
 
@@ -121,6 +122,7 @@ export default function Home() {
         <motion.div initial="hidden" animate="visible">
 
           {/* ---------- IMAGE CAROUSEL ---------- */}
+          
           <div className="relative h-64 md:h-96 mb-8 overflow-hidden rounded-3xl shadow-2xl border border-white/30 backdrop-blur-xl">
 
             <motion.img
@@ -157,6 +159,7 @@ export default function Home() {
               </>
             )}
           </div>
+          <InstallButton/>
 
           {/* ---------- DAILY THOUGHT CARD ---------- */}
           <motion.div

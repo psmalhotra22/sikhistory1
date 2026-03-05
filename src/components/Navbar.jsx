@@ -9,13 +9,10 @@ import {
   Landmark,
   HeartHandshake,
   ScrollText,
-  Mail,
   Music,
   HomeIcon,
-  Target,
-  Eye,
-  Goal,
   Sparkles,
+  Briefcase,
 } from "lucide-react";
 
 /* ---------------- SIMPLE ANIMATIONS ---------------- */
@@ -221,7 +218,15 @@ const menuItems = [
       { to: "/nitnem/SpiritualSongs", label: "Spiritual Songs", icon: Music },
     ],
   },
-  { to: "/purpose", label: "Purpose", icon: Sparkles },
+  {
+    label: "Purpose",
+    icon: Briefcase,
+    children: [
+      { to: "/purpose", label: "Purpose", icon: Sparkles },
+  { to: "/otherProjects", label: "otherProjects", icon: Briefcase },
+    ],
+  },
+  
 ];
 
 /* ---------------- SUB COMPONENTS ---------------- */

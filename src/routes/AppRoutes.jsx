@@ -11,6 +11,7 @@ import GurudwaraGallery from "../pages/GurudwaraGallery";
 import Sakhiyan from "../pages/Sakhiyan";
 import Purpose from "../pages/purpose";
 import SpiritualSongs from "../data/SpiritualSongs";
+import OtherProjects from "../pages/otherProjects";
 
 export default function AppRoutes({ refreshKey }) {
   const location = useLocation();
@@ -29,6 +30,7 @@ export default function AppRoutes({ refreshKey }) {
       <Route path="/shaheeds" element={<Shaheeds />} />
       <Route path="/nitnem/SpiritualSongs" element={<SpiritualSongs />} />
       <Route path="/purpose" element={<Purpose />} />
+      <Route path="/OtherProjects" element={<OtherProjects />} />
     </Routes>
   );
 }
